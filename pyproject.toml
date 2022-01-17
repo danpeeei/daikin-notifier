@@ -4,8 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["danpeeei <kuro.dogbear@gmail.com>"]
 
+[tool.poetry.scripts]
+daikin-notifier = "daikin_notifier"
+
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
