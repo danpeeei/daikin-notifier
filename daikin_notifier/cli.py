@@ -4,7 +4,7 @@ from daikin_notifier.line import send_message
 
 
 def main():
-    is_needed = is_needed_water
+    is_needed = is_needed_water()
     if not is_needed:
         print("Water need not to be supplied")
         delete_history()
