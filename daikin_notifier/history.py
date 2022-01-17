@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-HISTORY_FILE = Path(__file__).parents[1] / "history.txt"
+HISTORY_FILE = Path(os.path.expanduser("~")) / ".config/daikin-notifier"
 
 
 def already_notified():
