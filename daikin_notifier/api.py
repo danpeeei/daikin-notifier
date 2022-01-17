@@ -6,7 +6,6 @@ ENDPOINT = os.getenv("DAIKIN_CLEANER_ENDPOINT")
 
 def is_needed_water():
     url = parse.urljoin(ENDPOINT, "cleaner/get_unit_info")
-    # http = urllib3.PoolManager()
     req = request.Request(url)
     with request.urlopen(req) as res:
         body = res.read()
